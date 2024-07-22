@@ -68,8 +68,26 @@ where $M_{r,i} = 1$ if the region $r$ is specialized in the EA $i$, and $M_{r,i}
 As a complementary edge metric, we also computed the distance between products as the geometric inverse of its proximity, given by:
 
 $$
-d_{ij} = 1 - \phi_{ij}
+d_{ij} = 1 - \phi_{ij}.
 $$
+
+### 2.1.3 Complexity Measures
+
+The density is defined as the average proximity of an EA to a location’s current productive structure:
+
+$$
+\omega_k^j = \frac{\sum_{i \neq j} x_i \phi_{ij}}{\sum_{i \neq j} \phi_{ij}}
+$$
+
+where $\omega_k^j$ is the density around product or service $j$ given the indicator (number of employees and number of economic units) of the $k$-th location, and $x_i = 1$ if $RCA_{k,i} > 1$ and $0$ otherwise. A high-density value indicates that the $k$-th location has many developed products surrounding the $j$-th product.
+
+At the single product level, we considered the ratio between the average density of all locations in which the $j$-th product was a transition product and the average density of all locations in which the $j$-th product was not developed. Formally, we define the “discovery factor” $H_j$ as:
+
+$$
+H_j = \frac{\sum_{k=1}^T \omega_k^j}{\sum_{k=T+1}^N \omega_k^j / (N - T)}
+$$
+
+where $T$ is the number of locations in which the $j$-th product was a transition product and $N$ is the total number of locations.
 
 
 

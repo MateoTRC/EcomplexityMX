@@ -51,7 +51,7 @@ Following [1], we define:
 
 We define:
 - **Strong transition EA**: $RCA < 0.5$ in the first year and $RCA > 1$ in the second year.
-- **Weaker transition**: $0.5 < RCA < 1$ in the first year and $RCA > 1$ in the second. (We then define a weak underdevelopement if 0.5 < RCA < 1).
+- **Weaker transition**: $0.5 < RCA < 1$ in the first year and $RCA > 1$ in the second. (We then define a **_weak underdevelopement_** if $0.5 < RCA < 1$).
 
 For each pair of consecutive years (2004-2009, 2009-2014, 2014-2019) and the total period (2004-2019), we identified the subset of underdeveloped and transition EA.
 

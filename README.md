@@ -123,6 +123,15 @@ Additionally, with the EA space networks, we computed the following node metrics
      **Where**:
      - $d(i, j)$ is the shortest path distance between node $i$ and node $j$. In our case, the distance between connected nodes is given by $d_{ij} = 1 - \phi_{ij}$, which has to be considered in order to compute the shortest path.
 
+Here's the Markdown code with the relevant content for the logistic regression application:
+
+### Logistic Regression
+
+As previously explained, for each economic indicator (number of employees and number of economic units), the EAs at each location can be classified into two categories based on their RCA values in two different years: underdeveloped and transitional products (absolute and relaxed). Subsequently, we implemented a fixed effects logistic model [5], incorporating the metrics outlined in the preceding section as predictors for these distinct categories.
+
+Additionally, we implemented mixed variable models, where the metrics of one indicator were used to complement the predictors of the other. For example, the number of economic units of an EA, as well as its density or RCA, were used to predict the development of the number of employees indicator in the same EA.
+
+Every model returns the statistical relevance of each predictor. To evaluate the performance of each model, we obtained the ROC curve and used the area under the curve (AUC) as a score metric. The methodology and results are in the `Logistic_regression.ipynb` notebooks.
 
 ## References
 

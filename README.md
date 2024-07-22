@@ -24,19 +24,19 @@ The overall sector distributions of the number of employees and economic units p
 
 ### 2.1 Revealed Comparative Advantage (RCA)
 
-The revealed comparative advantage (RCAr,i) measures whether a region \( r \)'s economic indicator (personnel employed or economic units) has a greater value of the i-th EA, as a share of its total value, than the “average” state. It is measured as:
+The revealed comparative advantage (RCAr,i) measures whether a region $ r $'s economic indicator (personnel employed or economic units) has a greater value of the i-th EA, as a share of its total value, than the “average” state. It is measured as:
 
-\[
+$$
 RCAr,i = \frac{x_{r,i} / \sum_i x_{r,i}}{\sum_r x_{r,i} / \sum_{r,i} x_{r,i}}
-\]
+$$
 
-A region \( r \) is considered to specialize in the i-th EA if the indicator of the EA, as a percentage of the total indicator in the entity, is equal to or greater than its analogous measure at the national level, i.e., 
+A region $ r $ is considered to specialize in the i-th EA if the indicator of the EA, as a percentage of the total indicator in the entity, is equal to or greater than its analogous measure at the national level, i.e., 
 
-\[
+$$
 RCAr,i > 1
-\]
+$$
 
-We defined the ubiquity \( k_i \) of the EA \( i \) as the total of regions specialized in this activity.
+We defined the ubiquity $ k_i $ of the EA $ i $ as the total of regions specialized in this activity.
 
 
 ## References

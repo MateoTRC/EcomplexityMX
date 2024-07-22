@@ -55,6 +55,24 @@ We define:
 
 For each pair of consecutive years (2004-2009, 2009-2014, 2014-2019) and the total period (2004-2019), we identified the subset of underdeveloped and transition EA.
 
+### 2.1.2 Proximity and Networks
+
+Once the $RCA$ is computed, we can calculate the proximity, $0 < \phi_{ij} < 1$, between EAs and build the associated weighted networks of the EA space for each year. In these networks, each node represents an EA and the weighted edges represent the proximity of these EAs (for further details consult [1]). The proximity measure is based on the conditional probability that a region specialized in the EA $i$ will also be specialized in the EA $j$. Formally:
+
+$$
+\phi_{ij} = \frac{\sum_r M_{r,i} \sum_r M_{r,j}}{\max(k_i, k_j)}
+$$
+
+where $M_{r,i} = 1$ if the region $r$ is specialized in the EA $i$, and $M_{r,i} = 0$ otherwise.
+
+As a complementary edge metric, we also computed the distance between products as the geometric inverse of its proximity, given by:
+
+$$
+d_{ij} = 1 - \phi_{ij}
+$$
+
+
+
 ## References
 
 1. Hidalgo, C. A., Klinger, B., Barabási, A. L., & Hausmann, R. (2007). The product space conditions the development of nations. *Science, 317*(5837), 482-487.

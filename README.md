@@ -86,7 +86,7 @@ where $\omega_k^j$ is the density around product or service $j$ given the indica
 At the single product level, we considered the ratio between the average density of all locations in which the $j$-th product was a transition product and the average density of all locations in which the $j$-th product was not developed. Formally, we define the “discovery factor” $H_j$ as:
 
 $$
-H_j = \frac{\frac{1}{T} \sum_{k=1}^T \omega_k^j}{\frac{1}{N-T} \sum_{k=T+1}^N \omega_k^j}
+H_j = \frac{\frac{1}{T} \sum^T_{k=1} \omega_k^j}{\frac{1}{N-T} \sum_{k=T+1}^N \omega_k^j}
 $$
 
 where $T$ is the number of locations in which the $j$-th product was a transition product and $N$ is the total number of locations.

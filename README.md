@@ -9,15 +9,16 @@ We applied the economic complexity framework pioneered by Hidalgo et al. in [1] 
 
 ## Data
 
-We used the data from INEGI, ENOE. This data contains the number of employees and economic units of each economic activity (EA) and service (registered at INEGI) in each state for the years: 2004, 2009, 2014, and 2019. The products and services are labeled according to the NAICS-SCIAN classification. The 32 states are arranged in 4 regions according to their geographical location, as follows:
+We used the data from INEGI, ENOE. This data contains the number of employees (_POT) and economic units (_UE) of each economic activity (EA) and service (registered at INEGI) in each state for the years: 2004, 2009, 2014, and 2019. The products and services are labeled according to the NAICS-SCIAN classification. The 32 states are arranged in 4 regions according to their geographical location, as follows:
 
 - **South**: Campeche, Chiapas, Guerrero, Oaxaca, Quintana Roo, Tabasco, Veracruz, Yucatán.
 - **Center**: Ciudad de México, Estado de México, Guanajuato, Hidalgo, Morelos, Puebla, Querétaro, Tlaxcala.
 - **Center-North**: Aguascalientes, Baja California Sur, Colima, Durango, Jalisco, Michoacán, Nayarit, San Luis Potosí, Sinaloa.
 - **North**: Baja California, Chihuahua, Coahuila, Nuevo León, Sonora, Tamaulipas, Zacatecas.
 
-The overall sector distributions of the number of employees and economic units per year in each region are presented in the `Data_Visualization_by_sector.ipynb` notebooks.
+The data corresponding to the states are in the folders that start with 'Edo' and the regional data in those starting with 'Reg'. Thus, the data for the number of employees per state is in the folder 'Edo_POT', and the regional data is in 'Reg_POT'. On the other hand, the economic units data is in 'Edo_UE' and 'Reg_UE' for the state and regional division.
 
+The overall sector distributions of the number of employees and economic units per year in each region are presented in the `Data_Visualization_by_sector.ipynb` notebooks.
 
 
 ## References

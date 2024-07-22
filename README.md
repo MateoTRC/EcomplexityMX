@@ -9,7 +9,7 @@ We applied the economic complexity framework pioneered by Hidalgo et al. in [1] 
 
 ## Data
 
-We used the data from INEGI, ENOE. This data contains the number of employees (_POT) and economic units (_UE) of each economic activity (EA) and service (registered at INEGI) in each state for the years: 2004, 2009, 2014, and 2019. The products and services are labeled according to the NAICS-SCIAN classification. The 32 states are arranged in 4 regions according to their geographical location, as follows:
+We used the data from INEGI, ENOE. This data contains the number of employees (_POT) and economic units (_UE) of each economic activity (EA) and service (registered at INEGI) in each state for the years: 2004, 2009, 2014, and 2019. The products and services are labeled according to the NAICS-SCIAN classification. The 32 Mexican states are arranged in 4 regions according to their geographical location, as follows:
 
 - **South**: Campeche, Chiapas, Guerrero, Oaxaca, Quintana Roo, Tabasco, Veracruz, Yucatán.
 - **Center**: Ciudad de México, Estado de México, Guanajuato, Hidalgo, Morelos, Puebla, Querétaro, Tlaxcala.
@@ -24,7 +24,7 @@ The overall sector distributions of the number of employees and economic units p
 
 ### 2.1 Revealed Comparative Advantage (RCA)
 
-The revealed comparative advantage ($RCA_{r,i}$) measures whether a region $r$'s economic indicator (personnel employed or economic units) has a greater value of the i-th EA, as a share of its total value, than the “average” state. It is measured as:
+The revealed comparative advantage ($RCA_{r,i}$) measures whether a region $r$'s economic indicator (personnel employed or economic units) has a greater value of the $i$-th EA, as a share of its total value, than the “average” state. It is measured as:
 
 $$
 RCA_{r,i} = \frac{x_{r,i} / \sum_i x_{r,i}}{\sum_r x_{r,i} / \sum_{r,i} x_{r,i}}

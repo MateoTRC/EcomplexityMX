@@ -57,7 +57,7 @@ For each pair of consecutive years (2004-2009, 2009-2014, 2014-2019) and the tot
 
 ### Proximity and Networks
 
-Once the $RCA$ is computed, we can calculate the proximity, $0 < \phi_{ij} < 1$, between EAs and build the associated weighted networks of the EA space for each year. In these networks, each node represents an EA and the weighted edges represent the proximity of these EAs (for further details consult [1]). The proximity measure is based on the conditional probability that a region specialized in the EA $i$ will also be specialized in the EA $j$. Formally:
+Once the $RCA$ is computed, we can calculate the proximity, $0 < \phi_{ij} < 1$, between EAs and build the associated weighted networks of the EA space for each year. In these networks, each node represents an EA and the weighted edges represent the proximity of these EAs (for further details consult [1]). The networks are created in the `Create_graphs_files.ipynb` notebooks. The proximity measure is based on the conditional probability that a region specialized in the EA $i$ will also be specialized in the EA $j$. Formally:
 
 $$
 \phi_{ij} = \frac{\sum_r M_{r,i} \sum_r M_{r,j}}{\max(k_i, k_j)}
@@ -95,7 +95,7 @@ Here's the Markdown code with LaTeX formatted properly for the node metrics:
 
 ### Nodes Metrics
 
-Additionally, with the EA space networks, we computed the following node metrics associated with each EA each year:
+Additionally, with the EA space networks, we computed the following node metrics associated with each EA each year. This computation is done in the `Compute_graph_metrics.ipynb`, using the previously made networks files in `Create_graphs_files.ipynb`.
 
 1. **Degree Centrality**:
    - **Formal Definition**: Degree centrality measures the importance of a node in a network based on the number of connections it has.

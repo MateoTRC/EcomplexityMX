@@ -22,6 +22,9 @@ The overall sector distributions of the number of employees and economic units p
 
 ## Metrics
 
+Now we describe some of the ecomputed complexity metrics. The metrics are computed in the `Ecomplexity_metrics.ipynb` notebooks.
+
+
 ### 2.1 Revealed Comparative Advantage (RCA)
 
 The revealed comparative advantage ($RCA_{r,i}$) measures whether a region $r$'s economic indicator (personnel employed or economic units) has a greater value of the $i$-th EA, as a share of its total value, than the “average” state. It is measured as:

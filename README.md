@@ -25,7 +25,7 @@ The overall sector distributions of the number of employees and economic units p
 Now we describe some of the ecomputed complexity metrics. The metrics are computed in the `Ecomplexity_metrics.ipynb` notebooks.
 
 
-### 2.1 Revealed Comparative Advantage (RCA)
+### Revealed Comparative Advantage (RCA)
 
 The revealed comparative advantage ($RCA_{r,i}$) measures whether a region $r$'s economic indicator (personnel employed or economic units) has a greater value of the $i$-th EA, as a share of its total value, than the “average” state. It is measured as:
 
@@ -41,7 +41,7 @@ $$
 
 We defined the ubiquity $k_i$ of the EA $i$ as the total of regions specialized in this activity.
 
-### 2.1.1 Undeveloped and Transition Products
+### Undeveloped and Transition Products
 
 For each EA indicator (number of employees and number of economic units), we computed the revealed comparative advantage ($RCA$) per location each year. We are interested in finding the factors that condition the development of an EA at each location for each time period, focusing on the EA’s diversification.
 
@@ -55,7 +55,7 @@ We define:
 
 For each pair of consecutive years (2004-2009, 2009-2014, 2014-2019) and the total period (2004-2019), we identified the subset of underdeveloped and transition EA.
 
-### 2.1.2 Proximity and Networks
+### Proximity and Networks
 
 Once the $RCA$ is computed, we can calculate the proximity, $0 < \phi_{ij} < 1$, between EAs and build the associated weighted networks of the EA space for each year. In these networks, each node represents an EA and the weighted edges represent the proximity of these EAs (for further details consult [1]). The proximity measure is based on the conditional probability that a region specialized in the EA $i$ will also be specialized in the EA $j$. Formally:
 
@@ -73,7 +73,7 @@ $$
 
 I see what you mean. Let’s correct the summation notation to ensure clarity:
 
-### 2.1.3 Complexity Measures
+### Complexity Measures
 
 The density is defined as the average proximity of an EA to a location’s current productive structure:
 
@@ -91,7 +91,37 @@ $$
 
 where $T$ is the number of locations in which the $j$-th product was a transition product and $N$ is the total number of locations.
 
+Here's the Markdown code with LaTeX formatted properly for the node metrics:
 
+### Nodes Metrics
+
+Additionally, with the EA space networks, we computed the following node metrics associated with each EA each year:
+
+1. **Degree Centrality**:
+   - **Formal Definition**: Degree centrality measures the importance of a node in a network based on the number of connections it has.
+   - **Equation**:
+     $$
+     C_d(i) = \frac{\text{Number of connections of node } i}{\text{Total number of nodes in the network} - 1}
+     $$
+
+2. **Eigenvector Centrality**:
+   - **Formal Definition**: Eigenvector centrality measures the centrality of a node based on the centrality of its neighbors.
+   - **Equation**:
+     $$
+     A \mathbf{x} = \lambda \mathbf{x}
+     $$
+     **Where**:
+     - $A$ is the adjacency matrix of the network.
+     - The centrality of node $i$ is the $i$-th element of an eigenvector associated with the eigenvalue of maximum modulus that is positive.
+
+3. **Closeness Centrality**:
+   - **Formal Definition**: Closeness centrality measures how quickly a node can reach all other nodes in the network.
+   - **Equation**:
+     $$
+     C_c(i) = \frac{1}{\sum_{j} d(i, j)}
+     $$
+     **Where**:
+     - $d(i, j)$ is the shortest path distance between node $i$ and node $j$. In our case, the distance between connected nodes is given by $d_{ij} = 1 - \phi_{ij}$, which has to be considered in order to compute the shortest path.
 
 
 ## References

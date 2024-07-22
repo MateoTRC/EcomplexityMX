@@ -30,7 +30,7 @@ $$
 RCA_{r,i} = \frac{x_{r,i} / \sum_i x_{r,i}}{\sum_r x_{r,i} / \sum_{r,i} x_{r,i}}
 $$
 
-A region $r$ is considered to specialize in the i-th EA if the indicator of the EA, as a percentage of the total indicator in the entity, is equal to or greater than its analogous measure at the national level, i.e., 
+A region $r$ is considered to specialize in the $i$-th EA if the indicator of the EA, as a percentage of the total indicator in the entity, is equal to or greater than its analogous measure at the national level, i.e., 
 
 $$
 RCA_{r,i} > 1

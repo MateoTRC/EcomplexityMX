@@ -78,15 +78,15 @@ I see what you mean. Let’s correct the summation notation to ensure clarity:
 The density is defined as the average proximity of an EA to a location’s current productive structure:
 
 $$
-\omega_j^K = \frac{\sum_{i \neq j} x_i \phi_{ij}}{\sum_{i \neq j} \phi_{ij}}
+\omega_j^k = \frac{\sum_{i \neq j} x_i \phi_{ij}}{\sum_{i \neq j} \phi_{ij}}
 $$
 
-where $\omega_j^K$ is the density around product or service $j$ given the indicator (number of employees and number of economic units) of the $k$-th location, and $x_i = 1$ if $RCA_{k,i} > 1$ and $0$ otherwise. A high-density value indicates that the $k$-th location has many developed products surrounding the $j$-th product.
+where $\omega_j^k$ is the density around product or service $j$ given the indicator (number of employees and number of economic units) of the $k$-th location, and $x_i = 1$ if $RCA_{k,i} > 1$ and $0$ otherwise. A high-density value indicates that the $k$-th location has many developed products surrounding the $j$-th product.
 
 At the single product level, we considered the ratio between the average density of all locations in which the $j$-th product was a transition product and the average density of all locations in which the $j$-th product was not developed. Formally, we define the “discovery factor” $H_j$ as:
 
 $$
-H_j = \frac{\frac{1}{T} \sum_{k=1}^T \omega_j^K}{\frac{1}{N-T} \sum_{k=T+1}^N \omega_j^K}
+H_j = \frac{\frac{1}{T} \sum_{k=1}^T \omega_j^k}{\frac{1}{N-T} \sum_{k=T+1}^N \omega_j^k}
 $$
 
 where $T$ is the number of locations in which the $j$-th product was a transition product and $N$ is the total number of locations.

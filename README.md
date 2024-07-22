@@ -71,6 +71,8 @@ $$
 d_{ij} = 1 - \phi_{ij}.
 $$
 
+I see what you mean. Let’s correct the summation notation to ensure clarity:
+
 ### 2.1.3 Complexity Measures
 
 The density is defined as the average proximity of an EA to a location’s current productive structure:
@@ -84,10 +86,11 @@ where $\omega_k^j$ is the density around product or service $j$ given the indica
 At the single product level, we considered the ratio between the average density of all locations in which the $j$-th product was a transition product and the average density of all locations in which the $j$-th product was not developed. Formally, we define the “discovery factor” $H_j$ as:
 
 $$
-H_j = \frac{\sum_{k=1}^T \omega_k^j}{\sum_{k=T+1}^N \omega_k^j / (N - T)}
+H_j = \frac{\frac{1}{T} \sum_{k=1}^T \omega_k^j}{\frac{1}{N-T} \sum_{k=T+1}^N \omega_k^j}
 $$
 
 where $T$ is the number of locations in which the $j$-th product was a transition product and $N$ is the total number of locations.
+
 
 
 

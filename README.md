@@ -108,7 +108,7 @@ Additionally, with the EA space networks, we computed the following node metrics
    - **Formal Definition**: Eigenvector centrality measures the centrality of a node based on the centrality of its neighbors.
    - **Equation**:
      $$
-     A \mathbf{x} = \lambda \mathbf{x}
+     A \boldsymbol{x} = \lambda \boldsymbol{x}
      $$
      **Where**:
      - $A$ is the adjacency matrix of the network.

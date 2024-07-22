@@ -41,6 +41,19 @@ $$
 
 We defined the ubiquity $k_i$ of the EA $i$ as the total of regions specialized in this activity.
 
+### 2.1.1 Undeveloped and Transition Products
+
+For each EA indicator (number of employees and number of economic units), we computed the revealed comparative advantage ($RCA$) per location each year. We are interested in finding the factors that condition the development of an EA at each location for each time period, focusing on the EA’s diversification.
+
+Following [1], we define:
+- **Underdeveloped products**: $RCA < 0.5$
+- **Developed products**: $RCA > 1$
+
+We define:
+- **Strong transition EA**: $RCA < 0.5$ in the first year and $RCA > 1$ in the second year.
+- **Weaker transition**: $0.5 < RCA < 1$ in the first year and $RCA > 1$ in the second.
+
+For each pair of consecutive years (2004-2009, 2009-2014, 2014-2019) and the total period (2004-2019), we identified the subset of underdeveloped and transition EA.
 ## References
 
 1. Hidalgo, C. A., Klinger, B., Barabási, A. L., & Hausmann, R. (2007). The product space conditions the development of nations. *Science, 317*(5837), 482-487.

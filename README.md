@@ -22,7 +22,7 @@ The overall sector distributions of the number of employees and economic units p
 
 ## Metrics
 
-Now we describe some of the ecomputed complexity metrics. The metrics are computed in the `Ecomplexity_metrics.ipynb` notebooks.
+Now we describe some of the computed complexity metrics. The metrics are computed in the `Ecomplexity_metrics.ipynb` notebooks.
 
 
 ### Revealed Comparative Advantage (RCA)

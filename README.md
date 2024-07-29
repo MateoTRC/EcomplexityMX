@@ -75,6 +75,8 @@ I see what you mean. Let’s correct the summation notation to ensure clarity:
 
 ### Complexity Measures
 
+#### Density
+
 The density is defined as the average proximity of an EA to a location’s current productive structure:
 
 $$
@@ -82,16 +84,14 @@ $$
 $$
 
 where $\omega_j^k$ is the density around product or service $j$ given the indicator (number of employees and number of economic units) of the $k$-th location, and $x_i = 1$ if $RCA_{k,i} > 1$ and $0$ otherwise. A high-density value indicates that the $k$-th location has many developed products surrounding the $j$-th product.
-
-At the single product level, we considered the ratio between the average density of all locations in which the $j$-th product was a transition product and the average density of all locations in which the $j$-th product was not developed. Formally, we define the “discovery factor” $H_j$ as:
+#### Discovery factor
+At the single product and global level, we considered the ratio between the average density of all locations in which the $j$-th product was a transition product and the average density of all locations in which the $j$-th product was not developed. Formally, we define the “discovery factor” $H_j$ as:
 
 $$
 H_j = \frac{\frac{1}{T} \sum_{k=1}^T \omega_j^k}{\frac{1}{N-T} \sum_{k=T+1}^N \omega_j^k}
 $$
 
 where $T$ is the number of locations in which the $j$-th product was a transition product and $N$ is the total number of locations.
-
-Here's the Markdown code with LaTeX formatted properly for the node metrics:
 
 ### Nodes Metrics
 
@@ -123,13 +123,11 @@ Additionally, with the EA space networks, we computed the following node metrics
      **Where**:
      - $d(i, j)$ is the shortest path distance between node $i$ and node $j$. In our case, the distance between connected nodes is given by $d_{ij} = 1 - \phi_{ij}$, which has to be considered in order to compute the shortest path.
 
-Here's the Markdown code with the relevant content for the logistic regression application:
-
 ### Logistic Regression
 
-As previously explained, for each economic indicator (number of employees and number of economic units), the EAs at each location can be classified into two categories based on their RCA values in two different years: underdeveloped and transitional products (absolute and relaxed). Subsequently, we implemented a fixed effects logistic model [5], incorporating the metrics outlined in the preceding section as predictors for these distinct categories.
+As previously explained, for each economic indicator (number of employees and number of economic units), the EAs at each location can be classified into two categories based on their $RCA$ values in two different years: underdeveloped and transitional products (absolute and relaxed). Subsequently, we implemented a fixed effects logistic model [5], incorporating the metrics outlined in the preceding section as predictors for these distinct categories.
 
-Additionally, we implemented mixed variable models, where the metrics of one indicator were used to complement the predictors of the other. For example, the number of economic units of an EA, as well as its density or RCA, were used to predict the development of the number of employees indicator in the same EA.
+Additionally, we implemented mixed variable models, where the metrics of one indicator were used to complement the predictors of the other. For example, the number of economic units of an EA, as well as its density or $RCA$, were used to predict the development of the number of employees indicator in the same EA.
 
 Every model returns the statistical relevance of each predictor. To evaluate the performance of each model, we obtained the ROC curve and used the area under the curve (AUC) as a score metric. The methodology and results are in the `Logistic_regression.ipynb` notebooks.
 

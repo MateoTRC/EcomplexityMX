@@ -98,15 +98,15 @@ where $T$ is the number of locations in which the $j$-th product was a transitio
 Additionally, with the EA space networks, we computed the following node metrics associated with each EA each year. This computation is done in the `Compute_graph_metrics.ipynb`, using the previously made networks files in `Create_graphs_files.ipynb`.
 
 #### Degree Centrality:
-   - **Formal Definition**: Degree centrality measures the importance of a node in a network based on the number of connections it has.
-   - **Equation**:
+- **Formal Definition**: Degree centrality measures the importance of a node in a network based on the number of connections it has.
+- **Equation**:
      $$
      C_d (i) = \frac{\text{Number of connections of node } i}{\text{Total number of nodes in the network} - 1}
      $$
 
 #### Eigenvector Centrality:
-   - **Formal Definition**: Eigenvector centrality measures the centrality of a node based on the centrality of its neighbors.
-   -**Equation**:
+- **Formal Definition**: Eigenvector centrality measures the centrality of a node based on the centrality of its neighbors.
+-**Equation**:
      
 $$
 A x = \lambda x.
@@ -114,19 +114,19 @@ $$
 
 Where:
      
-     - $A$ is the adjacency matrix of the network.
-     - The centrality of node $i$ is the $i$-th element of an eigenvector associated with the eigenvalue of maximum modulus that is positive.
+- $A$ is the adjacency matrix of the network.
+- The centrality of node $i$ is the $i$-th element of an eigenvector associated with the eigenvalue of maximum modulus that is positive.
 
 #### Closeness Centrality:
-   - **Formal Definition**: Closeness centrality measures how quickly a node can reach all other nodes in the network.
-   - **Equation**:
+- **Formal Definition**: Closeness centrality measures how quickly a node can reach all other nodes in the network.
+- **Equation**:
      
      $$
      C_c (i) = \frac{1}{\sum_{j} d(i, j)}
      $$
      
 Where:
-     - $d(i, j)$ is the shortest path distance between node $i$ and node $j$. In our case, the distance between connected nodes is given by $d_{ij} = 1 - \phi_{ij}$, which has to be considered in order to compute the shortest path.
+- $d(i, j)$ is the shortest path distance between node $i$ and node $j$. In our case, the distance between connected nodes is given by $d_{ij} = 1 - \phi_{ij}$, which has to be considered in order to compute the shortest path.
 
 ### Logistic Regression
 

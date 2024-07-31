@@ -3,6 +3,9 @@
 ## Author
 Mateo Tonatiuh Rodríguez Cervantes
 
+## Repository Structure
+Each folder process specific data. The processing is made in the notebooks at the `src` folder. The input data is in the `row_data` folder, and the results are stored in the `output_data` folder.
+
 ## Abstract
 
 We applied the economic complexity framework pioneered by Hidalgo et al. in [1] to analyze the employment and economic units within Mexico's territorial boundaries, segmented by states and regions. We developed a machine learning approach to predict product development within the product space and gauge the significance of each complexity feature. Our analysis revealed that complexity metrics serve as significant predictors for economic activities development across the majority of states and regions.

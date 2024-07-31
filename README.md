@@ -105,16 +105,16 @@ Additionally, with the EA space networks, we computed the following node metrics
      $$
 
 2. **Eigenvector Centrality**:
-   - **Formal Definition**: Eigenvector centrality measures the centrality of a node based on the centrality of its neighbors.
-   - **Equation**:
-     $$
-     A x = \lambda x
-     $$
+**Formal Definition**: Eigenvector centrality measures the centrality of a node based on the centrality of its neighbors.
+**Equation**:
+$$
+A x = \lambda x
+$$
      **Where**:
      - $A$ is the adjacency matrix of the network.
      - The centrality of node $i$ is the $i$-th element of an eigenvector associated with the eigenvalue of maximum modulus that is positive.
 
-3. **Closeness Centrality**:
+4. **Closeness Centrality**:
    - **Formal Definition**: Closeness centrality measures how quickly a node can reach all other nodes in the network.
    - **Equation**:
      $$

@@ -100,9 +100,7 @@ Additionally, with the EA space networks, we computed the following node metrics
 #### Degree Centrality:
 - **Formal Definition**: Degree centrality measures the importance of a node in a network based on the number of connections it has.
 - **Equation**:
-     $$
-     C_d (i) = \frac{\text{Number of connections of node } i}{\text{Total number of nodes in the network} - 1}
-     $$
+  $C_d (i) = \frac{\text{Number of connections of node } i}{\text{Total number of nodes in the network} - 1}$
 
 #### Eigenvector Centrality:
 - **Formal Definition**: Eigenvector centrality measures the centrality of a node based on the centrality of its neighbors.
@@ -121,9 +119,7 @@ Where:
 - **Formal Definition**: Closeness centrality measures how quickly a node can reach all other nodes in the network.
 - **Equation**:
      
-     $$
-     C_c (i) = \frac{1}{\sum_{j} d(i, j)}
-     $$
+$$C_c (i) = \frac{1}{\sum_{j} d(i, j)}$$
      
 Where:
 - $d(i, j)$ is the shortest path distance between node $i$ and node $j$. In our case, the distance between connected nodes is given by $d_{ij} = 1 - \phi_{ij}$, which has to be considered in order to compute the shortest path.

@@ -105,8 +105,7 @@ $$C_d (i) = \frac{\text{Number of connections of node } i}{\text{Total number of
 
 #### Eigenvector Centrality:
 - **Formal Definition**: Eigenvector centrality measures the centrality of a node based on the centrality of its neighbors.
-
--**Equation**:
+- **Equation**:
      
 $$
 A x = \lambda x.
